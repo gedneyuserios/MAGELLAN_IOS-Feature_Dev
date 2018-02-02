@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var label2: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view, typically from a nib.hello
     
         label1.font = UIFont(name: appFontRegular, size: 35)
         label2.font = UIFont(name: appFontMedium, size: 35)
