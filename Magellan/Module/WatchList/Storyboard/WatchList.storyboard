@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RNp-7e-hgD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Canada Type - Semplicita Pro Bold.otf">
+            <string>SemplicitaPro-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Watch List View Controller-->
+        <scene sceneID="4Dd-7Z-ftu">
+            <objects>
+                <viewController storyboardIdentifier="WatchListViewController" id="RNp-7e-hgD" customClass="WatchListViewController" customModule="Magellan" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kLR-fz-oA3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bgkdMagellan" translatesAutoresizingMaskIntoConstraints="NO" id="fwL-Mo-8KI">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="67E-1u-ieM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WATCHLIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qBV-Ez-yGr">
+                                        <rect key="frame" x="13" y="164" width="193" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="aBH-jZ-1m7"/>
+                                            <constraint firstAttribute="width" constant="193" id="jWv-pp-ixd"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SemplicitaPro-Bold" family="Semplicita Pro" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconProfileWatchlist" translatesAutoresizingMaskIntoConstraints="NO" id="OpA-Pu-RXN">
+                                        <rect key="frame" x="13" y="122" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="RML-Nu-Ak2"/>
+                                            <constraint firstAttribute="height" constant="32" id="RqI-qi-Fs3"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoMagellanLight" translatesAutoresizingMaskIntoConstraints="NO" id="DWN-u6-CMz">
+                                        <rect key="frame" x="13" y="10" width="59" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="29" id="aT2-dk-aGN"/>
+                                            <constraint firstAttribute="width" constant="59" id="rf5-Rt-ogU"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBL-JN-FGE">
+                                        <rect key="frame" x="333" y="10" width="29" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="29" id="Myd-UY-lcK"/>
+                                            <constraint firstAttribute="height" constant="29" id="tKE-2h-4nw"/>
+                                        </constraints>
+                                        <state key="normal" image="iconX"/>
+                                        <connections>
+                                            <action selector="backActionWatchList:" destination="RNp-7e-hgD" eventType="touchUpInside" id="52n-eJ-iDT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="OpA-Pu-RXN" firstAttribute="top" secondItem="DWN-u6-CMz" secondAttribute="bottom" constant="83" id="1jq-c8-tBN"/>
+                                    <constraint firstItem="DWN-u6-CMz" firstAttribute="leading" secondItem="67E-1u-ieM" secondAttribute="leading" constant="13" id="Ak9-hf-985"/>
+                                    <constraint firstItem="qBV-Ez-yGr" firstAttribute="top" secondItem="OpA-Pu-RXN" secondAttribute="bottom" constant="10" id="FGk-Xn-UZl"/>
+                                    <constraint firstAttribute="trailing" secondItem="oBL-JN-FGE" secondAttribute="trailing" constant="13" id="Qig-Lh-xaq"/>
+                                    <constraint firstItem="oBL-JN-FGE" firstAttribute="top" secondItem="67E-1u-ieM" secondAttribute="top" constant="10" id="SGP-V8-Rfr"/>
+                                    <constraint firstItem="qBV-Ez-yGr" firstAttribute="leading" secondItem="67E-1u-ieM" secondAttribute="leading" constant="13" id="ZcE-Nl-ESy"/>
+                                    <constraint firstAttribute="height" constant="200" id="axp-Pv-4s5"/>
+                                    <constraint firstAttribute="width" constant="375" id="doU-Sq-7et"/>
+                                    <constraint firstItem="DWN-u6-CMz" firstAttribute="top" secondItem="67E-1u-ieM" secondAttribute="top" constant="10" id="h7z-9J-7TF"/>
+                                    <constraint firstItem="OpA-Pu-RXN" firstAttribute="leading" secondItem="67E-1u-ieM" secondAttribute="leading" constant="13" id="smS-ex-nAO"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JBh-2q-UeD">
+                                <rect key="frame" x="0.0" y="219.5" width="375" height="447.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="447.5" id="7Kw-YD-rad"/>
+                                    <constraint firstAttribute="width" constant="375" id="bWm-lL-VpT"/>
+                                </constraints>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JBh-2q-UeD" firstAttribute="bottom" secondItem="4Ie-pZ-UEw" secondAttribute="bottom" id="6QB-cE-QYL"/>
+                            <constraint firstItem="67E-1u-ieM" firstAttribute="top" secondItem="4Ie-pZ-UEw" secondAttribute="top" id="EfN-gt-VwJ"/>
+                            <constraint firstItem="JBh-2q-UeD" firstAttribute="top" secondItem="4Ie-pZ-UEw" secondAttribute="top" constant="199.5" id="Oyb-pR-OEA"/>
+                            <constraint firstItem="JBh-2q-UeD" firstAttribute="trailing" secondItem="4Ie-pZ-UEw" secondAttribute="trailing" id="WjF-6o-rHL"/>
+                            <constraint firstItem="4Ie-pZ-UEw" firstAttribute="bottom" secondItem="67E-1u-ieM" secondAttribute="bottom" constant="447" id="nqa-2E-qee"/>
+                            <constraint firstItem="67E-1u-ieM" firstAttribute="leading" secondItem="4Ie-pZ-UEw" secondAttribute="leading" id="wS2-44-SsP"/>
+                            <constraint firstItem="JBh-2q-UeD" firstAttribute="leading" secondItem="4Ie-pZ-UEw" secondAttribute="leading" id="wpX-qh-m7i"/>
+                            <constraint firstItem="67E-1u-ieM" firstAttribute="trailing" secondItem="4Ie-pZ-UEw" secondAttribute="trailing" id="yUy-6b-T1C"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4Ie-pZ-UEw"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="JBh-2q-UeD" id="Fq0-Oj-glQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uwk-Nf-CeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3623" y="1758"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bgkdMagellan" width="375" height="667"/>
+        <image name="iconProfileWatchlist" width="25" height="25"/>
+        <image name="iconX" width="19" height="19"/>
+        <image name="logoMagellanLight" width="59" height="29"/>
+    </resources>
+</document>

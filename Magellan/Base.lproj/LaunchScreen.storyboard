@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgkdMagellan" translatesAutoresizingMaskIntoConstraints="NO" id="pY7-jt-ldI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoMagellanHero" translatesAutoresizingMaskIntoConstraints="NO" id="EYJ-XL-VlZ">
+                                <rect key="frame" x="46.666666666666657" y="292" width="321" height="152"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EYJ-XL-VlZ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="13Q-98-MBD"/>
+                            <constraint firstItem="pY7-jt-ldI" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="IX3-F2-3D8"/>
+                            <constraint firstItem="EYJ-XL-VlZ" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="b0e-e1-VXr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pY7-jt-ldI" secondAttribute="trailing" id="gMe-fw-Agw"/>
+                            <constraint firstAttribute="bottom" secondItem="pY7-jt-ldI" secondAttribute="bottom" id="krV-IT-MCp"/>
+                            <constraint firstItem="pY7-jt-ldI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="w8t-5A-4IT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.6305418719212"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bgkdMagellan" width="375" height="667"/>
+        <image name="logoMagellanHero" width="321" height="152"/>
+    </resources>
+</document>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Canada Type - Semplicita Pro Bold.otf">
+            <string>SemplicitaPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FeaturedLargeCollectionViewCell" id="gTV-IL-0wX" customClass="FeaturedLargeCollectionViewCell" customModule="Magellan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="225"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="225"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JGc-EZ-X9J">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="225"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pgH-qT-NwA" customClass="GradientButton" customModule="Magellan" customModuleProvider="target">
+                                <rect key="frame" x="20" y="171" width="137" height="44"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.80392156859999997" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="137" id="lQc-VA-Vh8"/>
+                                    <constraint firstAttribute="height" constant="44" id="zfW-h2-Vfj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SemplicitaPro-Bold" family="Semplicita Pro" pointSize="16"/>
+                                <state key="normal" title="WATCH">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="startPoint">
+                                        <point key="value" x="0.5" y="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="point" keyPath="endPoint">
+                                        <point key="value" x="0.5" y="1.8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="watchButtonAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="YNu-sG-Gb9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dj6-et-JlJ">
+                                <rect key="frame" x="20" y="132.5" width="81.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gi2-uI-Qmc">
+                                <rect key="frame" x="20" y="100" width="50" height="32.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gi2-uI-Qmc" firstAttribute="leading" secondItem="JGc-EZ-X9J" secondAttribute="leading" constant="20" id="0qZ-JC-qCG"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Gi2-uI-Qmc" secondAttribute="trailing" constant="20" id="6Br-M8-2IB"/>
+                            <constraint firstAttribute="bottom" secondItem="pgH-qT-NwA" secondAttribute="bottom" constant="10" id="6Xy-qJ-LtP"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dj6-et-JlJ" secondAttribute="trailing" constant="20" id="HJS-lk-ORW"/>
+                            <constraint firstItem="pgH-qT-NwA" firstAttribute="top" secondItem="dj6-et-JlJ" secondAttribute="bottom" constant="19" id="Ix9-CO-QPe"/>
+                            <constraint firstItem="pgH-qT-NwA" firstAttribute="leading" secondItem="JGc-EZ-X9J" secondAttribute="leading" constant="20" id="Lon-6F-t74"/>
+                            <constraint firstItem="dj6-et-JlJ" firstAttribute="top" secondItem="Gi2-uI-Qmc" secondAttribute="bottom" id="cc5-ca-mxs"/>
+                            <constraint firstItem="dj6-et-JlJ" firstAttribute="leading" secondItem="JGc-EZ-X9J" secondAttribute="leading" constant="20" id="cdW-g0-v9o"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JGc-EZ-X9J" secondAttribute="trailing" id="DTI-F0-r38"/>
+                <constraint firstAttribute="bottom" secondItem="JGc-EZ-X9J" secondAttribute="bottom" id="NB0-VB-rdh"/>
+                <constraint firstItem="JGc-EZ-X9J" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="fQP-FV-aXA"/>
+                <constraint firstItem="JGc-EZ-X9J" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="w3d-W8-L3a"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="300" height="225"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="dj6-et-JlJ" id="XhQ-sg-a4J"/>
+                <outlet property="titleLabel" destination="Gi2-uI-Qmc" id="CGH-NW-cC2"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="-33.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

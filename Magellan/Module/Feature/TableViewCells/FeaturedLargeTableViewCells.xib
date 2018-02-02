@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeaturedLargeTableViewCells" rowHeight="257" id="KGk-i7-Jjw" customClass="FeaturedLargeTableViewCells" customModule="Magellan" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="257"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="256.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJ5-4B-GJo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="219.5"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="amk-P4-cwN">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="0NB-DR-TAd">
+                        <rect key="frame" x="0.0" y="219.5" width="320" height="37"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="currentPageIndicatorTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </pageControl>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="HJ5-4B-GJo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="6Bt-Ms-reb"/>
+                    <constraint firstAttribute="trailing" secondItem="HJ5-4B-GJo" secondAttribute="trailing" id="AKq-CW-cwI"/>
+                    <constraint firstAttribute="bottom" secondItem="0NB-DR-TAd" secondAttribute="bottom" id="DDK-1H-XAA"/>
+                    <constraint firstItem="HJ5-4B-GJo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="L5T-Ex-KET"/>
+                    <constraint firstItem="0NB-DR-TAd" firstAttribute="top" secondItem="HJ5-4B-GJo" secondAttribute="bottom" id="ZEI-dU-diK"/>
+                    <constraint firstItem="0NB-DR-TAd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="tcD-iq-Ihh"/>
+                    <constraint firstAttribute="trailing" secondItem="0NB-DR-TAd" secondAttribute="trailing" id="zWD-F1-qo6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="collectionView" destination="HJ5-4B-GJo" id="Mab-Nj-drf"/>
+                <outlet property="pageControl" destination="0NB-DR-TAd" id="ciC-uK-hgT"/>
+            </connections>
+            <point key="canvasLocation" x="-35" y="-52.5"/>
+        </tableViewCell>
+    </objects>
+</document>
